@@ -103,6 +103,19 @@ h2 {
   height: 150px;
   border-radius: 15px;
 }
+/* #element-counter {
+  opacity: 0;
+} */
+
+#factura-div ul li{
+  color: black;
+  list-style: none;
+}
+#factura-div {
+    display: flex;
+    justify-content: center;
+}
+
 
 .item-content {
     display: flex;
@@ -126,6 +139,22 @@ h2 {
   align-items: center;
   margin-left: auto;
   justify-content: space-between; /* Ajusta el espacio entre los elementos */
+}
+.pass-btn, .pay-btn {
+  background-color: green;
+  border-radius: 15px;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.pass-btn a, .pay-btn a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  line-height: 12px;
 }
 
 .item-buttons button {
