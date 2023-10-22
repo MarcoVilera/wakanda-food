@@ -30,7 +30,9 @@ nav .nav-links li{
     display: inline-block;
     padding: 0 20px;
 }
-
+body{
+    overflow-x: hidden;
+}
 nav ul li a::before{
     display: block;
     content: '';
@@ -68,6 +70,7 @@ nav ul li a:hover::before{
     top: 3px;
     right: -2px;
     font-size: 10px;
+    line-height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,9 +84,86 @@ nav ul li a:hover::before{
 .cart:hover{
     opacity: 0.7;
 }
+h2 {
+    text-align: center;
+}
+.wrapper {
+  overflow-y: auto;
+  margin: 10px 10%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: auto;
+    width: 600px;
+}
+.item-price{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-content span {
+  font-weight: bold;
+}
+
+.item-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-between; /* Ajusta el espacio entre los elementos */
+}
+
+.item-buttons button {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  line-height: 35px; /* Ajusta la altura del texto para centrarlo verticalmente */
+  text-align: center; /* Ajusta la alineación horizontal del texto */
+  font-family: roboto;
+}
+
+.btn-increment {
+  background-color: green;
+  color: white;
+}
+
+.btn-increment:hover {
+  background-color: #2a562c;
+}
+
+.btn-decrement:hover {
+  background-color: lightgray;
+}
+
+.item-buttons span {
+  padding: 5px;
+}
 footer {
-    position: fixed;
-    bottom: 0;
+  /*  position: fixed;
+    bottom: 0;*/
+    height: 4rem;
     width: 100vw;
     background-color: green;
     padding: 10px;
