@@ -1,9 +1,12 @@
+/* General styles */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/*For nav bar*/
 li,a{
     font-weight: 500;
     font-size: 20px;
@@ -20,7 +23,10 @@ header{
     height: 50px;
 }
 .logo{
-    height: 40px;
+    height: 50px;
+}
+main{
+    background-color: #FBFFF4;
 }
 nav .nav-links li{
     list-style: none;
@@ -47,14 +53,14 @@ nav ul li a:hover::before{
     width: 100%;
 }
 .cart{
-    position: relative;
-    left: -50px;
+  position: relative;
+  left: -50px;
     text-align: center;
     cursor:pointer;
     width: 40px;
     width: 40px;
-}
-.cart a span{
+  }
+  .cart a span{
     
     background-color: red;
     padding: 3px;
@@ -74,24 +80,27 @@ nav ul li a:hover::before{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.cart img{
+  }
+  
+  .cart img{
     display: inline-block;
     width: 40px;
     margin-top: 10px;
-}
-.cart:hover{
+  }
+  .cart:hover{
     opacity: 0.7;
-}
+  }
+  /*End of Nav bar*/
+  
+ /* .wrapper {
+    overflow-y: auto;
+    margin: 10px 10%;
+  }
+*/
+/* Menu styles */
 h2 {
     text-align: center;
 }
-.wrapper {
-  overflow-y: auto;
-  margin: 10px 10%;
-}
-
 .item {
   display: flex;
   align-items: center;
@@ -189,6 +198,9 @@ h2 {
 .item-buttons span {
   padding: 5px;
 }
+/* End of menu styles */
+
+/*Footer styles*/
 footer {
   /*  position: fixed;
     bottom: 0;*/
@@ -226,3 +238,4 @@ small{
     text-align: center;
     margin-top: 5px;
 }
+/*End of footer styles*/
