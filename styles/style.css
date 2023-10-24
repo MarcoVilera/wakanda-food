@@ -3,8 +3,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  }
+  body{
+    background-color: #FBFFF4;
+  }
 
 /*For nav bar*/
 li,a{
@@ -24,9 +27,6 @@ header{
 }
 .logo{
     height: 50px;
-}
-main{
-    background-color: #FBFFF4;
 }
 nav .nav-links li{
     list-style: none;
@@ -92,11 +92,12 @@ nav ul li a:hover::before{
   }
   /*End of Nav bar*/
   
- /* .wrapper {
+ .wrapper {
     overflow-y: auto;
-    margin: 10px 10%;
+    width: 100vw;
+    height: 100vh
   }
-*/
+
 /* Menu styles */
 h2 {
     text-align: center;
@@ -112,9 +113,9 @@ h2 {
   height: 150px;
   border-radius: 15px;
 }
-/* #element-counter {
+#element-counter {
   opacity: 0;
-} */
+}
 
 #factura-div ul li{
   color: black;
@@ -149,15 +150,22 @@ h2 {
   margin-left: auto;
   justify-content: space-between; /* Ajusta el espacio entre los elementos */
 }
-.pass-btn, .pay-btn {
+.pass-btn, #pay-btn {
   background-color: green;
   border-radius: 15px;
   border: none;
   padding: 0;
   margin-bottom: 10px;
+  cursor: pointer;
 }
-
-.pass-btn a, .pay-btn a {
+#pay-btn{
+  padding: 10px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  line-height: 12px;
+}
+.pass-btn a{
   display: block;
   padding: 10px 15px;
   font-size: 12px;
