@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css">
-    <title>Menú | Wakanda Food</title>
+    <title>Pago | Wakanda Food</title>
 </head>
 
 <body>
@@ -33,19 +33,52 @@
 
         <main>
             <div class="wrapper"
-                style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                <h1>FACTURA</h1>
-                <div id="factura-div">
-
+                style="display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative; height: 100vh;">
+                <div id="pay-div">
+                    <span>Realizar pago-móvil</span>
+                    <p>V-6.917.824<br>
+                        0424-4410003 <br>
+                        Banco Mercantil 0105
+                        <br>Tasa BCV = <span id="tasa">35.02 Bs</span>
+                    </p>
+                    <span id="cost"></span>
+                    <div style="display: inline; margin: 5px;">
+                        <span>Dispone de </span><span id="timer"></span><span> segundos para realizar el pago
+                            movil</span>
+                    </div>
+                    <input type="text" placeholder=" Número de referencia" id="input"
+                        onkeydown="return inputChecker(event);">
+                    <button class="btns" style="padding: 10px 15px; color:white; margin-left:10px; margin-top: 5px;"
+                        id="confirm-pay">Confirmar</button>
+                    <span id="status"></span>
                 </div>
-                <div style="display: flex; justify-content: center">
-                <button>Pagar</button>
-                <button><a href="menu.html">Volver al menú</a></button>
+                <!-- style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: wheat;" -->
+                <div id="shown">
+                    <h1>FACTURA</h1>
+                    <div id="factura-div">
+                    </div>
+                    <fieldset style="display: block;">
+                        <legend>Seleccione un método de retiro</legend>
+
+                        <input type="radio" name="retiro" value="tienda" checked />
+                        <label for="op1">Retiro en tienda</label>
+
+                        <input type="radio" id="op2" name="retiro" value="delivery" />
+                        <label for="op2">Delivery</label>
+
+                    </fieldset>
+                    <div style="display: flex; justify-content: center; margin-top: 10px;">
+
+                        <button class="btns-"><a style="color: #303030;" href="menu.html">Volver al
+                                menú</a></button>
+                        <button class="btns" style="padding: 10px 15px; color:white; margin-left:10px;"
+                            id="toggle-div">Pagar</button>
+                    </div>
                 </div>
             </div>
         </main>
         <footer>
-            <ul class="footer-list">
+            <ul class=" footer-list">
                 <li class="footer-element"><a href="https://www.facebook.com/wakandafood" target="_blank"><img
                             src="assets/facebook.svg" draggable="false" alt="facebook" width="30"
                             height="30">Facebook</a>
