@@ -1,4 +1,4 @@
-/* General styles */
+﻿/* General styles */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -196,13 +196,22 @@ h2 {
   margin-left: auto;
   justify-content: space-between; /* Ajusta el espacio entre los elementos */
 }
-.pass-btn, #pay-btn {
+.pass-btn, #pay-btn, .btns {
   background-color: green;
   border-radius: 15px;
   border: none;
   padding: 0;
   margin-bottom: 10px;
   cursor: pointer;
+  font-size: 12px;
+}
+.btns-{
+  border-radius: 15px;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 12px;
 }
 #pay-btn{
   padding: 10px 15px;
@@ -211,7 +220,7 @@ h2 {
   color: white;
   line-height: 12px;
 }
-.pass-btn a{
+.pass-btn a,button a{
   display: block;
   padding: 10px 15px;
   font-size: 12px;
@@ -240,15 +249,15 @@ h2 {
   background-color: green;
   color: white;
 }
-.btn-decrement{
+.btn-decrement, .btns-{
   background-color: transparent;
 }
 
-.btn-increment:hover {
+.btn-increment:hover, .btns:hover {
   background-color: #2a562c;
 }
 
-.btn-decrement:hover {
+.btn-decrement:hover, .btns-:hover {
   background-color: lightgray;
 }
 
@@ -256,7 +265,24 @@ h2 {
   padding: 5px;
 }
 /* End of menu styles */
-
+#pay-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index:-20;
+    background-color: #FBFFF4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-attachment:fixed ;
+}
+#pay-div p {
+  text-align: center;
+}
 /*Footer styles*/
 footer {
   /*  position: fixed;
